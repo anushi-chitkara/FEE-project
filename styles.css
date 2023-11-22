@@ -1,0 +1,342 @@
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(bgimage.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20%;
+}
+
+.logo {
+    text-align: center;
+    color: rgb(68, 5, 62);
+}
+
+.logo img {
+    max-width: 400px; 
+}
+
+.login-form {
+    align-self: center;
+    background-color: rgb(68, 5, 62);
+    padding: 18px;
+    box-shadow: 0px 0px 10px rgb(68, 5, 62);
+    border-radius: 50%;
+    width: 460px;
+    height: 450px;
+    color: aliceblue;
+}
+
+.login-form h1 {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    width: 400px;
+    height: 5px;
+    margin-bottom: 30px;
+    align-content: center;
+}
+
+.login-form h5 {
+    text-align: center;
+    align-content: center;
+    margin-bottom: 5px;
+}
+
+.links {
+    text-align: center;
+    margin: 10px;
+    margin-bottom: 5px;
+}
+
+a {
+    display: inline-block;
+    margin: 10px; 
+    text-align: center; 
+    vertical-align: auto;
+    text-decoration: none;
+}
+
+a img {
+    max-width: 100%;
+    height: auto; 
+}
+
+.input-container {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.input-container input {
+    background-color: transparent;
+    width: 51%;
+    
+    padding: 10px;
+    justify-content: center;
+    align-items: center; 
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.password-container {
+    margin-bottom: 15px;
+    text-align: center;
+    color: rgb(131, 172, 208);
+}
+
+.password-container input {
+    background-color: transparent;
+    width: 45%;
+    padding: 10px;
+    justify-content: center;
+    align-items: center; 
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    color: rgb(131, 172, 208);
+}
+
+.btn-container {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.btn-container button {
+    padding: auto;
+    background-color: #007bff;
+    color: aliceblue;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
+    font-family: "Inter UI", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    height: 2rem;
+    padding: 0 1.6rem;
+    text-align: center;
+    text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+    transition: all 0.5s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+.nm{
+    padding: auto;
+    background-color: #007bff;
+    color: aliceblue;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
+    font-family: "Inter UI", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    height: 2rem;
+    padding: 0 1.6rem;
+    text-align: center;
+    text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+    transition: all 0.5s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+.nm:hover{
+    background-color: #0056b3; 
+    box-shadow: rgba(80, 63, 205, 0.5) 0 1px 30px;
+    transition-duration: 0.1s;
+}
+.btn-container button:hover {
+    background-color: #0056b3; 
+    box-shadow: rgba(80, 63, 205, 0.5) 0 1px 30px;
+    transition-duration: 0.1s;
+}
+
+.options {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.options a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.options a:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+/*Navigation Bar*/
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Montserrat', sans-serif;
+	line-height: 1.6;
+	margin: 0;
+	min-height: 100vh;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+h2,
+h3,
+a {
+	color:aliceblue;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+
+.logo {
+	margin: 0;
+	font-size: 1.45em;
+}
+
+.main-nav {
+	margin-top: 1px;
+
+
+}
+.logo a,
+.main-nav a {
+	padding: 10px 15px;
+	text-transform: uppercase;
+	text-align: center;
+	display: block;
+}
+
+.main-nav a {
+	color: #34495e;
+	font-size: .99em;
+}
+
+.main-nav a:hover {
+	color: #718daa;
+}
+
+
+
+.header {
+	padding-top: 2px;
+	padding-bottom: 2px;
+	border: 1px solid #a2a2a2;
+	background-color: #f4f4f4;
+	-webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+
+
+
+@media (min-width: 769px) {
+	.header,
+	.main-nav {
+		display: flex;
+	}
+	.header {
+		flex-direction: column;
+		align-items: center;
+    	.header{
+		width: 80%;
+		margin: 0 auto;
+		max-width: 1150px;
+	}
+	}
+
+}
+
+@media (min-width: 1025px) {
+	.header {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+}
+
+/*Main Page css*/
+body {
+    background-color: #f2f2f2;
+}
+
+.container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url(bgimage.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.logo img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+.countdown-form {
+    text-align: center;
+    margin-top: 20px;
+    width: 80%;
+    max-width: 470px;
+    background-color: rgb(68, 5, 62);
+    padding: 20px;
+    border-radius: 60%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    height: 450px;
+}
+
+#timer {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #007bff;
+}
+.countdown-timer {
+    text-align: center;
+    position:sticky;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.homepg{
+    background-image: url(bgimage.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+

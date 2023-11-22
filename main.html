@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Main Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="Logo-site.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <h2 class="logo" ><a href="Logo-site.png" style="color: rgb(68, 5, 62);">CYCL<i class="fa-solid fa-clock-rotate-left" style="font-size: 56px;"></i>TIMER</a></h2>
+        <ul class="main-nav">
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <!-- <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li> -->
+        </ul>
+    </header>
+
+    <div class="container2">
+        <div class="logo">
+            <!-- <img src="images/Logo-site.png" alt="Logo"> -->
+        </div>
+
+        <div class="countdown-form">
+            <h2>Set Countdown Timer</h2>
+            <form id="countdownForm">
+                <div class="input-container">
+                    <label for="countdownInput" style="color: rgb(131, 172, 208);">Enter time (in seconds):</label>
+                    <input type="number" id="countdownInput" required style="color: rgb(131, 172, 208);">
+                </div>
+                <div class="btn-container">
+                    <button type="button" onclick="startCountdown()">Start Countdown</button>
+                </div>
+                <div class="btn-container">
+                    <button type="button" onclick="stopCountdown()">Stop Countdown</button>
+                </div>
+                <div class="btn-container">
+                    <button type="button" onclick="resetCountdown()">Reset Countdown</button>
+                </div>
+                <div class="btn-container">
+                    <h2>Countdown Timer:</h2>
+                    <div id="timer"></div>
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Get the button element
+            var startButton = document.querySelector(".btn-container button");
+
+            // Add an event listener to the button for the "click" event
+            startButton.addEventListener("click", function () {
+                startCountdown(); // Call the startCountdown function when the button is clicked
+            });
+        });
+        function startCountdown() {
+            var countdownInput = document.getElementById("countdownInput").value;
+            var timerElement = document.getElementById("timer");
+            var time = countdownInput;
+
+            var countdown = setInterval(function () {
+                timerElement.textContent = time + " seconds remaining";
+                time--;
+
+                if (time < 0) {
+                    clearInterval(countdown);
+                    timerElement.textContent = "Time's up!";
+                }
+            }, 1000);
+        }
+        function resetCountdown() {
+            clearInterval(countdown); // Clear the existing countdown interval
+            var timerElement = document.getElementById("timer");
+            timerElement.textContent = ""; // Clear the timer text
+            document.getElementById("countdownInput").value = ""; // Clear the input field
+        }
+    </script>
+
+    <!-- <script>
+        // import "./styles.css";
+
+// Select Countdown container
+const countContainer = document.getElementById("countdown-number");
+
+// Select action buttons
+const startButton = document.getElementById("start");
+const stopButton = document.getElementById("stop");
+const resetButton = document.getElementById("reset");
+
+// Select timeout Audio element
+const timeoutAudio = document.getElementById("timeout_audio");
+
+// variable to store count
+var remainingTime = 30;
+
+// variable to store time interval
+var timer;
+
+// Variable to track whether timer is running or not
+var isStopped = true;
+
+// Function to start Timer
+const startCountdown = () => {
+  if (isStopped) {
+    isStopped = false;
+    countContainer.innerHTML = remainingTime;
+    timer = setInterval(renderTime, 1000);
+  }
+};
+
+// Function to stop Timer
+const stopCountdown = () => {
+  isStopped = true;
+  if (timer) {
+    clearInterval(timer);
+  }
+};
+
+// Function to reset Timer
+const resetCountdown = () => {
+  isStopped = true;
+  clearInterval(timer);
+  remainingTime = 30;
+  countContainer.innerHTML = remainingTime;
+};
+
+// Initialize timeout sound
+timeoutAudio.src = "http://soundbible.com/grab.php?id=1252&type=mp3";
+timeoutAudio.load();
+
+// Attach onclick event to buttons
+startButton.onclick = startCountdown;
+resetButton.onclick = resetCountdown;
+stopButton.onclick = stopCountdown;
+
+// function to display time
+const renderTime = () => {
+  // decement time
+  remainingTime -= 1;
+  // render count on the screen
+  countContainer.innerHTML = remainingTime;
+  // timeout on zero
+  if (remainingTime === 0) {
+    isStopped = true;
+    clearInterval(timer);
+    // Play audio on timeout
+    timeoutAudio.play();
+    remainingTime = 30;
+  }
+};
+    </script> -->
+</body>
+
+</html>
